@@ -1,0 +1,66 @@
+inspecode:
+
+  experimental:
+    ignore:
+    #- **/bindata.go
+    #- **/*_test.go
+
+  cpd:          ### for Go
+    thresholds:
+      num-errors: 999
+
+  errcheck:     ### for Go
+    thresholds:
+      num-errors: 999
+
+  gas:          ### for Go
+    thresholds:
+      num-errors: 999
+
+  go-test:      ### for Go
+    thresholds:
+      num-errors: 999
+
+  go-vet:       ### for Go
+    thresholds:
+      num-errors: 999
+
+  gofmt:        ### for Go
+    auto-fix: true
+    thresholds:
+      num-errors: 999
+
+  goimports:    ### for Go
+    auto-fix: true
+    thresholds:
+      num-errors: 999
+
+  golint:       ### for Go
+    thresholds:
+      num-errors: 348
+
+  gosimple:     ### for Go
+    auto-fix: true
+    thresholds:
+      num-errors: 999
+
+  grep:         ### for any-languages
+    thresholds:
+      num-errors: 999
+
+  ineffassign:  ### for Go
+    thresholds:
+      num-errors: 999
+
+  interfacer:   ### for Go
+    thresholds:
+      num-errors: 999
+
+  misspell:     ### for any-languages
+    auto-fix: true
+    thresholds:
+      num-errors: 188
+
+  unused:       ### for Go
+    thresholds:
+      num-errors: 999

@@ -27,6 +27,7 @@ benchmark.txt
 /.release
 /.tarballs
 
+!/rocro.yml
 !/circle.yml
 !/.travis.yml
 !/.promu.yml
