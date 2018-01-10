@@ -12,7 +12,7 @@ inspecode:
 
   errcheck:         ### for Go
     thresholds:
-      num-issues: 999
+      num-issues: 309
 
   gas:              ### for Go
     thresholds:
@@ -43,7 +43,7 @@ inspecode:
   gosimple:         ### for Go
     auto-fix: true
     thresholds:
-      num-issues: 4
+      num-issues: 16
 
   grep:             ### for any-languages
     thresholds:
@@ -69,4 +69,4 @@ inspecode:
       --single-occurrence:
       --all-likelihoods:
     thresholds:
-      num-issues: 248
+      num-issues: 48
