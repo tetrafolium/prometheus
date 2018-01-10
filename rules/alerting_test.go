@@ -16,9 +16,9 @@ package rules
 import (
 	"testing"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/promql"
+	"github.com/tetrafolium/prometheus/util/testutil"
 )
 
 func TestAlertingRuleHTMLSnippet(t *testing.T) {

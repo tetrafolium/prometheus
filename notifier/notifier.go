@@ -34,10 +34,10 @@ import (
 	old_ctx "golang.org/x/net/context"
 	"golang.org/x/net/context/ctxhttp"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/relabel"
-	"github.com/prometheus/prometheus/util/httputil"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/relabel"
+	"github.com/tetrafolium/prometheus/util/httputil"
 )
 
 const (

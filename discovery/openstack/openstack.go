@@ -23,7 +23,7 @@ import (
 	"github.com/gophercloud/gophercloud/openstack"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/prometheus/prometheus/config"
+	"github.com/tetrafolium/prometheus/config"
 )
 
 var (

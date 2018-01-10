@@ -32,12 +32,12 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/timestamp"
+	"github.com/tetrafolium/prometheus/pkg/value"
+	"github.com/tetrafolium/prometheus/storage"
+	"github.com/tetrafolium/prometheus/util/testutil"
 )
 
 func TestNewScrapePool(t *testing.T) {

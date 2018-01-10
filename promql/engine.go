@@ -28,12 +28,12 @@ import (
 	"github.com/go-kit/kit/log/level"
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/timestamp"
+	"github.com/tetrafolium/prometheus/pkg/value"
+	"github.com/tetrafolium/prometheus/storage"
 
-	"github.com/prometheus/prometheus/util/stats"
+	"github.com/tetrafolium/prometheus/util/stats"
 )
 
 const (

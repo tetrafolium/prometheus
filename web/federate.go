@@ -24,11 +24,11 @@ import (
 	"github.com/prometheus/common/expfmt"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/timestamp"
+	"github.com/tetrafolium/prometheus/pkg/value"
+	"github.com/tetrafolium/prometheus/promql"
+	"github.com/tetrafolium/prometheus/storage"
 )
 
 var (

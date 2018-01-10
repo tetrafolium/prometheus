@@ -24,7 +24,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/prometheus/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/labels"
 )
 
 type lexer struct {

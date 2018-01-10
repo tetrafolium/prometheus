@@ -21,19 +21,19 @@ import (
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 
-	"github.com/prometheus/prometheus/config"
+	"github.com/tetrafolium/prometheus/config"
 
-	"github.com/prometheus/prometheus/discovery/azure"
-	"github.com/prometheus/prometheus/discovery/consul"
-	"github.com/prometheus/prometheus/discovery/dns"
-	"github.com/prometheus/prometheus/discovery/ec2"
-	"github.com/prometheus/prometheus/discovery/file"
-	"github.com/prometheus/prometheus/discovery/gce"
-	"github.com/prometheus/prometheus/discovery/kubernetes"
-	"github.com/prometheus/prometheus/discovery/marathon"
-	"github.com/prometheus/prometheus/discovery/openstack"
-	"github.com/prometheus/prometheus/discovery/triton"
-	"github.com/prometheus/prometheus/discovery/zookeeper"
+	"github.com/tetrafolium/prometheus/discovery/azure"
+	"github.com/tetrafolium/prometheus/discovery/consul"
+	"github.com/tetrafolium/prometheus/discovery/dns"
+	"github.com/tetrafolium/prometheus/discovery/ec2"
+	"github.com/tetrafolium/prometheus/discovery/file"
+	"github.com/tetrafolium/prometheus/discovery/gce"
+	"github.com/tetrafolium/prometheus/discovery/kubernetes"
+	"github.com/tetrafolium/prometheus/discovery/marathon"
+	"github.com/tetrafolium/prometheus/discovery/openstack"
+	"github.com/tetrafolium/prometheus/discovery/triton"
+	"github.com/tetrafolium/prometheus/discovery/zookeeper"
 )
 
 // Discoverer provides information about target groups. It maintains a set

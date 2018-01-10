@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/prompb"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/prompb"
 )
 
 var longErrMessage = strings.Repeat("error message", maxErrMsgLen)

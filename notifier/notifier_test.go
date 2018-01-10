@@ -28,9 +28,9 @@ import (
 	old_ctx "golang.org/x/net/context"
 
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/util/httputil"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/util/httputil"
 )
 
 func TestPostPath(t *testing.T) {

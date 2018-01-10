@@ -32,8 +32,8 @@ import (
 	"github.com/prometheus/common/model"
 
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/util/strutil"
 )
 
 const (

@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/tetrafolium/prometheus/util/testutil"
 	"gopkg.in/yaml.v2"
 )
 

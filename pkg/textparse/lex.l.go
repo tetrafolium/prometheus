@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"unicode/utf8"
 
-	"github.com/prometheus/prometheus/pkg/value"
+	"github.com/tetrafolium/prometheus/pkg/value"
 )
 
 const (

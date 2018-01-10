@@ -33,13 +33,13 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/route"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/retrieval"
-	"github.com/prometheus/prometheus/storage/remote"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/timestamp"
+	"github.com/tetrafolium/prometheus/prompb"
+	"github.com/tetrafolium/prometheus/promql"
+	"github.com/tetrafolium/prometheus/retrieval"
+	"github.com/tetrafolium/prometheus/storage/remote"
 )
 
 type targetRetrieverFunc func() []*retrieval.Target

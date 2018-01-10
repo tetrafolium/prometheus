@@ -17,8 +17,8 @@ import (
 	"context"
 
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/storage"
 )
 
 // QueryableClient returns a storage.Queryable which queries the given

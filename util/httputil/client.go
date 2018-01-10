@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/mwitkow/go-conntrack"
-	"github.com/prometheus/prometheus/config"
+	"github.com/tetrafolium/prometheus/config"
 )
 
 // NewClient returns a http.Client using the specified http.RoundTripper.

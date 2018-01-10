@@ -25,10 +25,10 @@ import (
 
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/version"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/rulefmt"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/util/promlint"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/pkg/rulefmt"
+	"github.com/tetrafolium/prometheus/promql"
+	"github.com/tetrafolium/prometheus/util/promlint"
 )
 
 func main() {

@@ -27,8 +27,8 @@ import (
 	apiv1 "k8s.io/client-go/pkg/api/v1"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/util/strutil"
 )
 
 // Pod discovers new pod targets.

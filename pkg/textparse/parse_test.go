@@ -23,7 +23,7 @@ import (
 
 	"github.com/prometheus/common/expfmt"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/labels"
 	"github.com/stretchr/testify/require"
 )
 

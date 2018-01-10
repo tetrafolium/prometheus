@@ -16,7 +16,7 @@ package consul
 import (
 	"testing"
 
-	"github.com/prometheus/prometheus/config"
+	"github.com/tetrafolium/prometheus/config"
 )
 
 func TestConfiguredService(t *testing.T) {

@@ -24,8 +24,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/tetrafolium/prometheus/config"
+	"github.com/tetrafolium/prometheus/util/testutil"
 )
 
 const (

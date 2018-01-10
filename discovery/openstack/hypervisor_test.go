@@ -21,7 +21,7 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/config"
+	"github.com/tetrafolium/prometheus/config"
 )
 
 type OpenstackSDHypervisorTestSuite struct {

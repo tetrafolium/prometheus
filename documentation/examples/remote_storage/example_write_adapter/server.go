@@ -22,7 +22,7 @@ import (
 	"github.com/golang/snappy"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/prompb"
+	"github.com/tetrafolium/prometheus/prompb"
 )
 
 func main() {

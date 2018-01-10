@@ -13,7 +13,7 @@
 
 package storage
 
-import "github.com/prometheus/prometheus/pkg/labels"
+import "github.com/tetrafolium/prometheus/pkg/labels"
 
 type noopQuerier struct{}
 

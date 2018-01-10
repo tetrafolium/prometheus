@@ -17,9 +17,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/tetrafolium/prometheus/pkg/labels"
+	"github.com/tetrafolium/prometheus/pkg/timestamp"
+	"github.com/tetrafolium/prometheus/util/testutil"
 )
 
 func BenchmarkHoltWinters4Week5Min(b *testing.B) {
@@ -80,7 +80,7 @@ eval instant at 1d changes(http_requests[1d])
 }
 
 func TestDeriv(t *testing.T) {
-	// https://github.com/prometheus/prometheus/issues/2674#issuecomment-315439393
+	// https://github.com/tetrafolium/prometheus/issues/2674#issuecomment-315439393
 	// This requires more precision than the usual test system offers,
 	// so we test it by hand.
 	storage := testutil.NewStorage(t)
