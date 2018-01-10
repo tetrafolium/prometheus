@@ -2,65 +2,66 @@ inspecode:
 
   experimental:
     ignore:
-    #- **/bindata.go
+    - '**/bindata.go'
     #- **/*_test.go
+    - 'vendor/**'
 
-  cpd:          ### for Go
+  cpd:              ### for Go
     thresholds:
       num-errors: 999
 
-  errcheck:     ### for Go
+  errcheck:         ### for Go
     thresholds:
       num-errors: 999
 
-  gas:          ### for Go
+  gas:              ### for Go
     thresholds:
       num-errors: 999
 
-  go-test:      ### for Go
+  go-test:          ### for Go
     thresholds:
       num-errors: 999
 
-  go-vet:       ### for Go
+  go-vet:           ### for Go
     thresholds:
       num-errors: 999
 
-  gofmt:        ### for Go
+  gofmt:            ### for Go
+    auto-fix: true
+    thresholds:
+      num-errors: 0
+
+  goimports:        ### for Go
     auto-fix: true
     thresholds:
       num-errors: 999
 
-  goimports:    ### for Go
+  golint:           ### for Go
+    thresholds:
+      num-errors: 216
+
+  gosimple:         ### for Go
     auto-fix: true
     thresholds:
-      num-errors: 999
+      num-errors: 999   # Too many issues detected: 2821 > 1000
 
-  golint:       ### for Go
-    thresholds:
-      num-errors: 348
-
-  gosimple:     ### for Go
-    auto-fix: true
+  grep:             ### for any-languages
     thresholds:
       num-errors: 999
 
-  grep:         ### for any-languages
+  ineffassign:      ### for Go
     thresholds:
       num-errors: 999
 
-  ineffassign:  ### for Go
+  interfacer:       ### for Go
     thresholds:
-      num-errors: 999
+      num-errors: 999   # Too many issues detected: 1680 > 1000
 
-  interfacer:   ### for Go
-    thresholds:
-      num-errors: 999
-
-  misspell:     ### for any-languages
+  misspell:         ### for any-languages
     auto-fix: true
     thresholds:
       num-errors: 188
 
-  unused:       ### for Go
+  unused:           ### for Go
     thresholds:
       num-errors: 999
