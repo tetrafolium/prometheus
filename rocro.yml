@@ -8,60 +8,60 @@ inspecode:
 
   cpd:              ### for Go
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   errcheck:         ### for Go
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   gas:              ### for Go
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   go-test:          ### for Go
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   go-vet:           ### for Go
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   gofmt:            ### for Go
     auto-fix: true
     thresholds:
-      num-errors: 0
+      num-issues: 0
 
   goimports:        ### for Go
     auto-fix: true
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   golint:           ### for Go
     thresholds:
-      num-errors: 216
+      num-issues: 216
 
   gosimple:         ### for Go
     auto-fix: true
     thresholds:
-      num-errors: 999   # Too many issues detected: 2821 > 1000
+      num-issues: 999   # Too many issues detected: 2821 > 1000
 
   grep:             ### for any-languages
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   ineffassign:      ### for Go
     thresholds:
-      num-errors: 999
+      num-issues: 999
 
   interfacer:       ### for Go
     thresholds:
-      num-errors: 999   # Too many issues detected: 1680 > 1000
+      num-issues: 999   # Too many issues detected: 1680 > 1000
 
   misspell:         ### for any-languages
     auto-fix: true
     thresholds:
-      num-errors: 188
+      num-issues: 188
 
   unused:           ### for Go
     thresholds:
-      num-errors: 999
+      num-issues: 999
