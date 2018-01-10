@@ -10,19 +10,17 @@ inspecode:
     thresholds:
       num-issues: 25
 
-  ########## depends "testing" package of Go-1.9
-  #errcheck:         ### for Go
-  #  thresholds:
-  #    num-issues: 999
+  errcheck:         ### for Go
+    thresholds:
+      num-issues: 999
 
   gas:              ### for Go
     thresholds:
       num-issues: 30
 
-  ########## depends "testing" package of Go-1.9
-  #go-test:          ### for Go
-  #  thresholds:
-  #    num-issues: 999
+  go-test:          ### for Go
+    thresholds:
+      num-issues: 999
 
   go-vet:           ### for Go
     thresholds:
