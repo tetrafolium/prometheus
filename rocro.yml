@@ -1,6 +1,8 @@
 inspecode:
 
   experimental:
+    runtime:
+      go: 1.9
     ignore:
     - '**/bindata.go'
     #- **/*_test.go
