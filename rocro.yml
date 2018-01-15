@@ -22,21 +22,23 @@ inspecode:
 
   go-test:          ### for Go
     thresholds:
-      num-issues: 999
+      num-issues: 0
 
   go-vet:           ### for Go
+    ignore:
+    - '**/lex.l.go'
     thresholds:
-      num-issues: 23
+      num-issues: 12
 
   gofmt:            ### for Go
     auto-fix: true
     thresholds:
-      num-issues: 6
+      num-issues: 0
 
   goimports:        ### for Go
     auto-fix: true
     thresholds:
-      num-issues: 6
+      num-issues: 0
 
   golint:           ### for Go
     thresholds:
@@ -57,7 +59,7 @@ inspecode:
 
   interfacer:       ### for Go
     thresholds:
-      num-issues: 5
+      num-issues: 1
 
   misspell:         ### for any-languages
     auto-fix: true
