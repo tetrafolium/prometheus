@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
+	libtsdb "github.com/prometheus/tsdb"
 	"github.com/tetrafolium/prometheus/storage/tsdb"
 	"github.com/tetrafolium/prometheus/util/testutil"
-	libtsdb "github.com/prometheus/tsdb"
 )
 
 func TestGlobalURL(t *testing.T) {

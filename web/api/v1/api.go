@@ -32,6 +32,7 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/route"
 	"github.com/prometheus/tsdb"
+	tsdbLabels "github.com/prometheus/tsdb/labels"
 
 	"github.com/tetrafolium/prometheus/config"
 	"github.com/tetrafolium/prometheus/pkg/labels"
@@ -43,7 +44,6 @@ import (
 	"github.com/tetrafolium/prometheus/storage/remote"
 	"github.com/tetrafolium/prometheus/util/httputil"
 	"github.com/tetrafolium/prometheus/util/stats"
-	tsdbLabels "github.com/prometheus/tsdb/labels"
 )
 
 type status string

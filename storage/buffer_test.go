@@ -18,8 +18,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/tetrafolium/prometheus/pkg/labels"
 	"github.com/stretchr/testify/require"
+	"github.com/tetrafolium/prometheus/pkg/labels"
 )
 
 func TestSampleRing(t *testing.T) {

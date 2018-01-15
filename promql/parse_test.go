@@ -22,8 +22,8 @@ import (
 	"time"
 
 	"github.com/prometheus/common/model"
-	"github.com/tetrafolium/prometheus/pkg/labels"
 	"github.com/stretchr/testify/require"
+	"github.com/tetrafolium/prometheus/pkg/labels"
 )
 
 var testExpr = []struct {
@@ -1485,7 +1485,7 @@ var testStatement = []struct {
 			    summary     = "Global request rate low",
 			    description = "The global request rate is low"
 			  }
-			  
+
 			foo = bar{label1="value1"}
 
 			ALERT BazAlert IF foo > 10

@@ -23,8 +23,8 @@ import (
 
 	"github.com/prometheus/common/expfmt"
 	"github.com/prometheus/common/model"
-	"github.com/tetrafolium/prometheus/pkg/labels"
 	"github.com/stretchr/testify/require"
+	"github.com/tetrafolium/prometheus/pkg/labels"
 )
 
 func TestParse(t *testing.T) {
