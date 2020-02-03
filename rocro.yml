@@ -14,11 +14,7 @@ inspecode:
 
   errcheck:         ### for Go
     thresholds:
-      num-issues: 309
-
-  gas:              ### for Go
-    thresholds:
-      num-issues: 30
+      num-issues: 329
 
   go-test:          ### for Go
     thresholds:
@@ -38,16 +34,20 @@ inspecode:
   goimports:        ### for Go
     auto-fix: true
     thresholds:
-      num-issues: 0
+      num-issues: 4
 
   golint:           ### for Go
     thresholds:
-      num-issues: 216
+      num-issues: 22
+
+  gosec:            ### for Go
+    thresholds:
+      num-issues: 270
 
   gosimple:         ### for Go
     auto-fix: true
     thresholds:
-      num-issues: 16
+      num-issues: 13
 
   grep:             ### for any-languages
     thresholds:
@@ -55,7 +55,7 @@ inspecode:
 
   ineffassign:      ### for Go
     thresholds:
-      num-issues: 3
+      num-issues: 2
 
   interfacer:       ### for Go
     thresholds:
@@ -64,7 +64,7 @@ inspecode:
   misspell:         ### for any-languages
     auto-fix: true
     thresholds:
-      num-issues: 31
+      num-issues: 10
 
   unused:           ### for Go
     ignore:
