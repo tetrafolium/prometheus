@@ -8,17 +8,17 @@ inspecode:
     #- **/*_test.go
     - 'vendor/**'
 
-  cpd:              ### for Go
-    thresholds:
-      num-issues: 25
+  #cpd:              ### for Go
+  #  thresholds:
+  #    num-issues: 25
 
   errcheck:         ### for Go
     thresholds:
       num-issues: 329
 
-  go-test:          ### for Go
-    thresholds:
-      num-issues: 0
+  #go-test:          ### for Go
+  #  thresholds:
+  #    num-issues: 0
 
   go-vet:           ### for Go
     ignore:
