@@ -2,23 +2,23 @@ inspecode:
 
   experimental:
     runtime:
-      go: 1.9
+      go: 1.13
     ignore:
     - '**/bindata.go'
     #- **/*_test.go
     - 'vendor/**'
 
-  #cpd:              ### for Go
-  #  thresholds:
-  #    num-issues: 25
+  cpd:              ### for Go
+    thresholds:
+      num-issues: 25
 
   errcheck:         ### for Go
     thresholds:
       num-issues: 329
 
-  #go-test:          ### for Go
-  #  thresholds:
-  #    num-issues: 0
+  go-test:          ### for Go
+    thresholds:
+      num-issues: 0
 
   go-vet:           ### for Go
     ignore:
@@ -43,6 +43,7 @@ inspecode:
   gosec:            ### for Go
     thresholds:
       num-issues: 271
+        # 270 issues on Enterprise
 
   gosimple:         ### for Go
     auto-fix: true
