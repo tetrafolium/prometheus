@@ -2,7 +2,7 @@ inspecode:
 
   experimental:
     runtime:
-      go: 1.13
+      go: 1.11
     ignore:
     - '**/bindata.go'
     #- **/*_test.go
