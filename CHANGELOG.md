@@ -868,7 +868,7 @@ All changes:
 * [BUGFIX] Fixed special value handling in division and modulo of the query
   language.
 * [BUGFIX] Fix embed-static.sh.
-* [CLEANUP] Added intial HTTP API tests.
+* [CLEANUP] Added initial HTTP API tests.
 * [CLEANUP] Misc. other code cleanups.
 * [MAINTENANCE] Updated vendored dependcies to their newest versions.
 
