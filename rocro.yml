@@ -2,7 +2,7 @@ inspecode:
 
   experimental:
     runtime:
-      go: 1.11
+      go: 1.9
     ignore:
     - '**/bindata.go'
     #- **/*_test.go
@@ -29,11 +29,11 @@ inspecode:
 
   gofmt:            ### for Go
     auto-fix: true
-    thresholds: { num-issues: 3 }
+    thresholds: { num-issues: 0 }
 
   goimports:        ### for Go
     auto-fix: true
-    thresholds: { num-issues: 6 }
+    thresholds: { num-issues: 4 }
 
   golint:           ### for Go
     thresholds: { num-issues: 22 }
