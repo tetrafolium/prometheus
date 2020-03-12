@@ -673,7 +673,7 @@ scrape_configs:
 
 	discoveryManager.ApplyConfig(cfg)
 
-	_ = <-discoveryManager.SyncCh()
+	<-discoveryManager.SyncCh()
 	verifyPresence(discoveryManager.targets, poolKey{setName: "prometheus", provider: "static/0"}, "{__address__=\"foo:9090\"}", true)
 	verifyPresence(discoveryManager.targets, poolKey{setName: "prometheus", provider: "static/0"}, "{__address__=\"bar:9090\"}", true)
 
@@ -688,7 +688,7 @@ scrape_configs:
 	}
 	discoveryManager.ApplyConfig(cfg)
 
-	_ = <-discoveryManager.SyncCh()
+	<-discoveryManager.SyncCh()
 	verifyPresence(discoveryManager.targets, poolKey{setName: "prometheus", provider: "static/0"}, "{__address__=\"foo:9090\"}", true)
 	verifyPresence(discoveryManager.targets, poolKey{setName: "prometheus", provider: "static/0"}, "{__address__=\"bar:9090\"}", false)
 }

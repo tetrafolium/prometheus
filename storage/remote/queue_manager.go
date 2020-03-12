@@ -196,8 +196,8 @@ func NewQueueManager(logger log.Logger, cfg config.QueueConfig, externalLabels m
 // sample on the floor if the queue is full.
 // Always returns nil.
 func (t *QueueManager) Append(s *model.Sample) error {
-	var snew model.Sample
-	snew = *s
+
+	var snew = *s
 	snew.Metric = s.Metric.Clone()
 
 	for ln, lv := range t.externalLabels {

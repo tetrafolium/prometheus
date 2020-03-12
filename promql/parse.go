@@ -348,7 +348,7 @@ func (p *parser) recover(errp *error) {
 			*errp = e.(error)
 		}
 	}
-	return
+
 }
 
 // stmt parses any statement.
