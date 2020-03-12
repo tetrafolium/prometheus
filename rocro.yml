@@ -2,7 +2,7 @@ inspecode:
 
   experimental:
     runtime:
-      go: 1.9
+      go: 1.11
     ignore:
     - '**/bindata.go'
     #- **/*_test.go
@@ -19,8 +19,8 @@ inspecode:
 
   go-test:          ### for Go
     thresholds: { num-issues: 0 }
-        # found 2 issues / (Go 1.9.7) on SaaS
-        # found 1 issues / (Go 1.9.7) on Enterprise
+        # found 2 issues / on SaaS
+        # found 1 issues / on Enterprise
 
   go-vet:           ### for Go
     ignore:
@@ -29,11 +29,11 @@ inspecode:
 
   gofmt:            ### for Go
     auto-fix: true
-    thresholds: { num-issues: 0 }
+    thresholds: { num-issues: 3 }
 
   goimports:        ### for Go
     auto-fix: true
-    thresholds: { num-issues: 4 }
+    thresholds: { num-issues: 6 }
 
   golint:           ### for Go
     thresholds: { num-issues: 22 }
