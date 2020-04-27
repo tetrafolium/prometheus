@@ -36,18 +36,11 @@ inspecode:
   gosec:            ### for Go
     thresholds: { num-issues: 273 }
 
-  gosimple:         ### for Go
-    auto-fix: true
-    thresholds: { num-issues: 13 }
-
   grep:             ### for any-languages
     thresholds: { num-issues: 16 }
 
   ineffassign:      ### for Go
     thresholds: { num-issues: 3 }
-
-  interfacer:       ### for Go
-    thresholds: { num-issues: 1 }
 
   misspell:         ### for any-languages
     auto-fix: true
