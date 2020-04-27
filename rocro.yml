@@ -1,76 +1,60 @@
 inspecode:
 
   experimental:
-    runtime:
-      go: 1.9
+    #runtime: { go: 1.13 }
     ignore:
     - '**/bindata.go'
     #- **/*_test.go
     - 'vendor/**'
 
-  #cpd:              ### for Go
-  #  thresholds:
-  #    num-issues: 25
+  cpd:              ### for Go
+    options: [ --skip-lexical-errors ]
+    thresholds: { num-issues: 45 }
 
   errcheck:         ### for Go
-    thresholds:
-      num-issues: 329
+    thresholds: { num-issues: 329 }
 
-  #go-test:          ### for Go
-  #  thresholds:
-  #    num-issues: 0
+  go-test:          ### for Go
+    thresholds: { num-issues: 2 }
 
   go-vet:           ### for Go
     ignore:
     - '**/lex.l.go'
-    thresholds:
-      num-issues: 12
+    thresholds: { num-issues: 12 }
 
   gofmt:            ### for Go
     auto-fix: true
-    thresholds:
-      num-issues: 0
+    thresholds: { num-issues: 3 }
 
   goimports:        ### for Go
     auto-fix: true
-    thresholds:
-      num-issues: 4
+    thresholds: { num-issues: 6 }
 
   golint:           ### for Go
-    thresholds:
-      num-issues: 22
+    thresholds: { num-issues: 22 }
 
   gosec:            ### for Go
-    thresholds:
-      num-issues: 271
+    thresholds: { num-issues: 273 }
 
   gosimple:         ### for Go
     auto-fix: true
-    thresholds:
-      num-issues: 13
+    thresholds: { num-issues: 13 }
 
   grep:             ### for any-languages
-    thresholds:
-      num-issues: 16
+    thresholds: { num-issues: 16 }
 
   ineffassign:      ### for Go
-    thresholds:
-      num-issues: 2
+    thresholds: { num-issues: 3 }
 
   interfacer:       ### for Go
-    thresholds:
-      num-issues: 1
+    thresholds: { num-issues: 1 }
 
   misspell:         ### for any-languages
     auto-fix: true
-    thresholds:
-      num-issues: 10
+    thresholds: { num-issues: 10 }
 
   unused:           ### for Go
     ignore:
     - '**/*_test.go'
-    options:
-      --single-occurrence:
-      --all-likelihoods:
-    thresholds:
-      num-issues: 48
+    options: [ --single-occurrence, --all-likelihoods ]
+    thresholds: { num-issues: 48 }
