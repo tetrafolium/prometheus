@@ -15,7 +15,7 @@ inspecode:
     thresholds: { num-issues: 329 }
 
   go-test:          ### for Go
-    thresholds: { num-issues: 2 }
+    thresholds: { num-issues: 3 }
 
   go-vet:           ### for Go
     ignore:
