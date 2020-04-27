@@ -20,7 +20,7 @@ inspecode:
   go-vet:           ### for Go
     ignore:
     - '**/lex.l.go'
-    thresholds: { num-issues: 12 }
+    thresholds: { num-issues: 14 }
 
   gofmt:            ### for Go
     auto-fix: true
@@ -42,9 +42,16 @@ inspecode:
   ineffassign:      ### for Go
     thresholds: { num-issues: 3 }
 
+  jscpd:
+    thresholds: { num-issues: 999 }
+
   misspell:         ### for any-languages
     auto-fix: true
     thresholds: { num-issues: 10 }
+
+  staticcheck:
+    #options: { -go: 1.13 }
+    thresholds: { num-issues: 999 }
 
   unused:           ### for Go
     ignore:
