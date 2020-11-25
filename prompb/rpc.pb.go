@@ -3,23 +3,27 @@
 
 package prompb
 
-import proto "github.com/gogo/protobuf/proto"
-import fmt "fmt"
-import math "math"
-
-import _ "google.golang.org/genproto/googleapis/api/annotations"
-import _ "github.com/gogo/protobuf/gogoproto"
-
-import time "time"
-
 import (
+	fmt "fmt"
+
+	proto "github.com/gogo/protobuf/proto"
+
+	math "math"
+
+	_ "google.golang.org/genproto/googleapis/api/annotations"
+
+	_ "github.com/gogo/protobuf/gogoproto"
+
+	time "time"
+
 	context "golang.org/x/net/context"
+
 	grpc "google.golang.org/grpc"
+
+	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
+
+	io "io"
 )
-
-import github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
-
-import io "io"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
