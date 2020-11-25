@@ -108,9 +108,9 @@ func TestEndpoints(t *testing.T) {
 		QueryEngine:           suite.QueryEngine(),
 		targetRetriever:       tr,
 		alertmanagerRetriever: ar,
-		now:    func() time.Time { return now },
-		config: func() config.Config { return samplePrometheusCfg },
-		ready:  func(f http.HandlerFunc) http.HandlerFunc { return f },
+		now:                   func() time.Time { return now },
+		config:                func() config.Config { return samplePrometheusCfg },
+		ready:                 func(f http.HandlerFunc) http.HandlerFunc { return f },
 	}
 
 	start := time.Unix(0, 0)
