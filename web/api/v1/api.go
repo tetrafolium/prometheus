@@ -138,11 +138,11 @@ func NewAPI(
 		Queryable:             q,
 		targetRetriever:       tr,
 		alertmanagerRetriever: ar,
-		now:         time.Now,
-		config:      configFunc,
-		ready:       readyFunc,
-		db:          db,
-		enableAdmin: enableAdmin,
+		now:                   time.Now,
+		config:                configFunc,
+		ready:                 readyFunc,
+		db:                    db,
+		enableAdmin:           enableAdmin,
 	}
 }
 
