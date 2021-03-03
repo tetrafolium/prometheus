@@ -1,11 +1,13 @@
+---
 inspecode:
 
-  experimental:
+  global:
     #runtime: { go: 1.13 }
     ignore:
     - '**/bindata.go'
-    #- **/*_test.go
     - 'vendor/**'
+
+  # coverity:
 
   cpd:              ### for Go
     options: [ --skip-lexical-errors ]
@@ -14,10 +16,13 @@ inspecode:
   errcheck:         ### for Go
     thresholds: { num-issues: 329 }
 
+  # fortify:
+
+  fossology:        ### for any-languages
+    thresholds: { num-issues: 999 }
+
   go-test:          ### for Go
-    thresholds: { num-issues: 3 }
-    # FAIL github.com/tetrafolium/prometheus/discovery/marathon
-    # FAIL github.com/tetrafolium/prometheus/promql
+    thresholds: { num-issues: 1 }
     # FAIL github.com/tetrafolium/prometheus/util/httputil
 
   go-vet:           ### for Go
@@ -46,7 +51,7 @@ inspecode:
     thresholds: { num-issues: 3 }
 
   jscpd:
-    thresholds: { num-issues: 97 }
+    thresholds: { num-issues: 98 }
 
   misspell:         ### for any-languages
     auto-fix: true
